@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        checkSpeed(80);
+
+
+        //my answer
+        function checkSpeed(speed) {
+            if (speed >= 75 && speed < 80) {
+                document.write(Math.floor(speed/5 - 14) + "point");
+            } else if (speed >= 130) {
+                document.write("Licence Suspended")
+            } else if (speed >= 80) {
+            document.write(Math.floor(speed/5 - 14) + "points");
+            } else {
+                document.write("Good Driver");
+            }
+        }
+
+        //solution
+        function checkSpeed(speed) {
+            const speedLimit = 70;
+            const kmPerPoint = 5;
+
+            if (speed < speedLimit + kmPerPoint) {
+                document.write("Good Driver");
+                return;
+            }
+            const points = Math.floor((speed - speedLimit) / 5);
+            if (points >= 12) 
+                document.write("Licence Suspended");
+            else
+                document.write(points + " Point(s)");
+            }
+    </script>
+    
+</body>
+</html>
