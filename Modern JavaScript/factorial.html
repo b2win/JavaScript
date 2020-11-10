@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Company Description">
+  <!--    CSS   -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+</head>
+<body>
+  <script>
+    function fact(n) { 
+      if(n <= 1) return n;
+      return n * fact(n-1);
+    }
+    for(var i=1; i<10; i++) {
+      console.log(i + "! = " + fact(i));
+    }
+    for(var i=1; i<10; i++) {
+      document.write(i + "! = " + fact(i) + "<br />");
+    }
+  </script>
+</body>
+</html>
