@@ -7,10 +7,14 @@
 		window.onload = function() {
 				var canvas = document.getElementById("mycanvas");
 				var ctx = canvas.getContext("2d")
-				// ctx.strokeRect(50, 60, 200, 100);
-				ctx.strokeRect(10,10,200,150);
-				ctx.fillRect(50,40,120,90);
-				ctx.clearRect(90,65,40,40);
+				ctx.beginPath();
+				ctx.arc(100,100,80,30 * Math.PI/180,120 * Math.PI/180,false);
+				ctx.stroke();
+				ctx.fill();
+				ctx.beginPath();
+				ctx.arc(100,100,80,30 * Math.PI/180,120 * Math.PI/180,true);
+				ctx.stroke();
+				// ctx.fill();
 			};
 	</script>
 </head>

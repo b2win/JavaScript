@@ -6,11 +6,13 @@
 	<script>
 		window.onload = function() {
 				var canvas = document.getElementById("mycanvas");
-				var ctx = canvas.getContext("2d")
-				// ctx.strokeRect(50, 60, 200, 100);
-				ctx.strokeRect(10,10,200,150);
-				ctx.fillRect(50,40,120,90);
-				ctx.clearRect(90,65,40,40);
+				var ctx = canvas.getContext("2d");
+				ctx.lineWidth = 10;
+				ctx.strokeStyle = "red";
+				ctx.fillStyle = "blue";
+				ctx.strokeRect(10,10,100,80);
+				ctx.fillRect(150,10,100,80);
+				ctx.globalAlpha = "0.6";
 			};
 	</script>
 </head>
